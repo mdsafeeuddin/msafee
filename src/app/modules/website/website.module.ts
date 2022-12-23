@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { WebsiteHeader } from "./header/header.component";
 import { WebsiteLayout } from "./website-layout.component";
@@ -10,6 +11,7 @@ import { ExperienceComponent } from "./experience/experience.component";
 
 import { SharedModule } from "../../shared/shared.module";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { EducationComponent } from "./education/education.component";
 
 const routes: Routes = [
   {
@@ -25,7 +27,8 @@ const routes: Routes = [
     AboutComponent,
     SkillsComponent,
     BannerComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     RouterModule.forChild(routes),

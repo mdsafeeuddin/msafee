@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { BackendProvider } from './login/helpers/backend';
 import { ErrorInterceptor } from './login/helpers/error.interceptor';
 import { JwtInterceptor } from './login/helpers/jwt.interceptor';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,10 @@ import { JwtInterceptor } from './login/helpers/jwt.interceptor';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    CommonModule,
     FormsModule,
     ReactiveFormsModule
   ],
